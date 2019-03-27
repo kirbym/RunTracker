@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for each individual item in the ListView. -->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/distDetailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/distanceTextView"
+        android:textSize="22sp"
+        android:textColor="@color/SlateGray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avgPaceDetailTV" />
+
+    <TextView
+        android:id="@+id/timeDetailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/timeTextView"
+        android:textSize="18sp"
+        android:textColor="@color/SlateGray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/avgPaceDetailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/avgPaceTextView"
+        android:textSize="18sp"
+        android:textColor="@color/SlateGray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeDetailTV" />
+
+    <TextView
+        android:id="@+id/dateDetailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="104dp"
+        android:text="@string/dateDetailTV"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

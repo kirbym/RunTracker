@@ -1,0 +1,49 @@
+<!-- Create relative layout and place fragment inside of relative layout
+ to be able to add overlay widgets in design mode. -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uindy.kirbyma.runtracker.MapsActivity">
+
+    <fragment
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:layout="@layout/dummy_mapviewfragment" />
+        <!-- Add dummy line above to view sample map instead
+        of blank background. (Helps to see where
+        widgets will be placed on real map.) -->
+
+
+    <!-- View Switcher allows two views (only two) to be swapped with each other
+    on same activity. -->
+    <ViewSwitcher
+        android:id="@+id/viewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- First layout - Before starting run -->
+        <include
+            android:id="@+id/startLayout"
+            layout="@layout/start_layout"/>
+
+        <!-- Second layout - After starting run -->
+        <include
+            android:id="@+id/activeLayout"
+            layout="@layout/active_layout"/>
+
+    </ViewSwitcher>
+
+</RelativeLayout>
+
+    <!-- These lines originally in Fragment before adding Relative Layout:
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.uindy.kirbyma.runtracker.MapsActivity"
+    -->

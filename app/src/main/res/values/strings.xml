@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Trek</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="default_info_title">Default Location</string>
+    <string name="map_frag_cont_desc">Sample map view</string>
+    <string name="title_activity_journal">My Activity</string>
+
+    <string name="runStartBtnText">START</string>
+    <string name="journalBtnText">JOURNAL</string>
+    <string name="runStopBtnText">STOP</string>
+
+    <string name="distanceTextView">Distance</string>
+    <string name="timeTextView">Time</string>
+    <string name="avgPaceTextView">Average Pace</string>
+    <string name="dateDetailTV">Date</string>
+</resources>

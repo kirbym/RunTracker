@@ -1,0 +1,49 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    Fill in certificate fingerprint and package name in below URL.
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=<cert_fingerprint>%3B<package_name>
+
+    You can also add your credentials to an existing key, using the
+    Package name and SHA-1 certificate fingerprint.
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBsD5XQx6D77FaSSzcw7Pqx70Fmbvg10tU</string>
+</resources>
+
+
+    <!--
+        If you are getting the below error when running the app and Google Maps is not loading correctly
+        (the application runs but the map itself is blank), then you may need to reconfigure the API
+        key with a new SHA-1 certificate fingerprint. Additionally, ensure the necessary Google Maps
+        APIs are enabled from the developer console. Check that the Google Play services versions
+        are up to date. These are found in the application's gradle build file, not the entire project's
+        gradle build file. Look in 'Project' view, <Project Name>/app/build.gradle and check that
+        the versions are up to date.
+
+        I received this error when moving my project from one dev machine to another.
+
+        If you need to find the SHA-1 fingerprint for the project, follow these steps:
+            1. Click on 'Gradle' on the right side panel.
+            2. Right-click in blank space and select 'Refresh Gradle project'.
+            3. Go to this location: <Project Name>/<Project Name> (root)/Tasks/android/
+            4. Run 'signingReport' file (double-click).
+            5. Output should be displayed in the 'Run' console window.
+    -->
+    <!-- Error:
+        E/Google Maps Android API: Authorization failure.  Please see https://developers.google.com/maps/documentation/android-api/start for how to correctly set up the map.
+        E/Google Maps Android API: In the Google Developer Console (https://console.developers.google.com)
+            Ensure that the "Google Maps Android API v2" is enabled.
+            Ensure that the following Android Key exists:
+                API Key: AIzaSyBsD5XQx6D77FaSSzcw7Pqx70Fmbvg10tU
+                Android Application (<cert_fingerprint>;<package_name>): <cert_fingerprint>;<package_name>
+    -->
